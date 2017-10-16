@@ -1,0 +1,29 @@
+{
+  "name": "inscapemagazine.github.io",
+  "version": "0.0.1",
+  "description": "SJCS’s Literary and Arts Magazine",
+  "main": "index.html\t",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "laxcomma": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inscapemagazine/inscapemagazine.github.io.git"
+  },
+  "keywords": [
+    "SJCS",
+    "Magazine",
+    "Literary",
+    "Arts"
+  ],
+  "author": "John Armstrong <jlarmst@g.clemson.edu> (https://github.com/jlarmstrongiv)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/inscapemagazine/inscapemagazine.github.io/issues"
+  },
+  "homepage": "https://github.com/inscapemagazine/inscapemagazine.github.io#readme"
+}
