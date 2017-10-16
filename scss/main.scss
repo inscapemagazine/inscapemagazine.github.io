@@ -10,5 +10,8 @@
 // General
 @import 'general'
 , 'typography';
+// Components
+@import 'components/header'
+, 'components/splash';
 // Testing
 @import 'test';

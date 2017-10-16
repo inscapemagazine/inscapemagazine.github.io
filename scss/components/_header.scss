@@ -1,0 +1,80 @@
+// General CSS
+.logo {
+  font-family: $sans-serif;
+  font-weight: 800;
+  color: $grey-text;
+  font-size: 24px;
+}
+.link {
+  font-family: $sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grey-text;
+}
+.menu,
+.search {
+  padding: 17px 19px;
+  cursor: pointer;
+}
+// Header
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  max-width: $w-header;
+  margin: 0 auto;
+}
+.header--white-bg {
+  background-color: $white;
+  box-shadow: none;
+}
+.header__logo {
+  padding: 21px 19px;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+.header__link {
+  display: none;
+  padding: 21px 19px;
+}
+@media (min-width: $bp-header) {
+  .header__link {
+    display: inherit;
+  }
+  .header__menu {
+    display: none;
+  }
+}
+// Sidebar
+#menu-sidebar {
+  width: 300px;
+  background-color: $white;
+}
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__logo {
+  padding: 20px 40px;
+  flex: 1 1 80%;
+}
+.sidebar__menu {
+  padding-top: 20px;
+}
+.sidebar__link {
+  padding: 20px 40px;
+  border-bottom: 1px solid $grey-outline;
+  color: $grey-icon; //lighten($grey-text, 20%);
+  &:first-child {
+    border-top: 1px solid $grey-outline;
+  }
+}
+.sidebar__subGroup {
+  display: flex;
+  flex-direction: row;
+}
