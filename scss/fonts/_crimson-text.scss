@@ -1,0 +1,46 @@
+// Mosk Typeface
+// weights 100-900
+// hasItalics = false
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-regular-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-italic-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-semibold-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-bold-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff2') format('woff2')
+  , url('../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
