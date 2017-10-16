@@ -1,3 +1,14 @@
+// Greys
+$grey-text: #4A4A4A;
+$grey-icon: #808080;
+$grey-outline: #DFDFDF;
+$grey-shadow: #E6E5EA;
+$grey-bg: #4A4A4A;
+$grey-footer: #5E5E5E;
+
+// Grey Gradient
+$g1: #C2C2C2;
+$g2: #E6E6E6;
 
 // Purples
 $perfume: #e0abf7;
@@ -57,3 +68,11 @@ $bg7: $deep-robins-egg-blue;
 $bg8: $bright-robins-egg-blue;
 $bg9: $turquoise;
 $bg10: $viking;
+
+// Gradients
+$g-red: linear-gradient(45deg, $ry1, $ry2, $ry3, $ry4);
+$g-purple: linear-gradient(45deg, $p4, $p3, $p2, $p1);
+$g-yellow: linear-gradient(45deg, $ry7, $ry7, $ry9, $ry10);
+$g-green: linear-gradient(45deg, $bg7, $bg8, $bg9, $bg10);
+$g-blue: linear-gradient(45deg, $bg1, $bg2, $bg3, $bg4);
+$g-grey: linear-gradient(45deg, $g1, $g2);
