@@ -9,9 +9,11 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
     
     <style amp-custom>
-          html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}embed,iframe,img,video{max-width:100%}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_thin_100-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_thin_100-webfont.woff") format("woff");font-weight:100;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_extra-light_200-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_extra-light_200-webfont.woff") format("woff");font-weight:200;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_light_300-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_light_300-webfont.woff") format("woff");font-weight:300;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_normal_400-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_normal_400-webfont.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_medium_500-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_medium_500-webfont.woff") format("woff");font-weight:500;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_semi-bold_600-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_semi-bold_600-webfont.woff") format("woff");font-weight:600;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_bold_700-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_bold_700-webfont.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_extra-bold_800-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_extra-bold_800-webfont.woff") format("woff");font-weight:800;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_ultra-bold_900-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_ultra-bold_900-webfont.woff") format("woff");font-weight:900;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-regular-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-regular-webfont.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-italic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-italic-webfont.woff") format("woff");font-weight:400;font-style:italic}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-semibold-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-semibold-webfont.woff") format("woff");font-weight:600;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff") format("woff");font-weight:600;font-style:italic}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-bold-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-bold-webfont.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff") format("woff");font-weight:700;font-style:italic}body{background-color:#fff}.title,.subTitle{color:#fff;text-shadow:0 2px 4px rgba(12,0,51,0.1)}.title--regular{font-size:45px}.title--big{font-size:60px}.subTitle{font-size:14px;line-height:25px}@media (min-width: 800px){.title--regular{font-size:85px}.title--big{font-size:85px}.subTitle{font-size:18px}}h1,h2,h3,h4{font-family:"Mosk",sans-serif;font-weight:800}h2{color:#4A4A4A;font-size:14px}h3{color:#4A4A4A;font-size:12px}@media (min-width: 450px){h2{font-size:18px}h3{font-size:14px}}p{font-family:"Crimson Text",serif;font-size:12px;line-height:18px;padding-bottom:7px}@media (min-width: 450px){p{font-size:14px;line-height:20px;padding-bottom:7px}}.logo{font-family:"Mosk",sans-serif;font-weight:800;color:#4A4A4A;font-size:24px}.link{font-family:"Mosk",sans-serif;font-weight:800;font-size:16px;text-transform:uppercase;text-decoration:none;color:#4A4A4A}.menu,.search{padding:17px 19px;cursor:pointer}.header--white-bg{background-color:#fff;-webkit-box-shadow:none;box-shadow:none}.header--clear-bg{background-color:none;-webkit-box-shadow:none;box-shadow:none}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:60px;max-width:1130px;margin:0 auto}.header__logo{padding:21px 19px}.header__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.header__link{display:none;padding:21px 19px}@media (min-width: 600px){.header__link{display:inherit}.header__menu{display:none}}#menu-sidebar{width:300px;background-color:#fff}.sidebar__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.sidebar__logo{padding:20px 40px;-webkit-box-flex:1;-ms-flex:1 1 80%;flex:1 1 80%}.sidebar__menu{padding-top:20px}.sidebar__link{padding:20px 40px;border-bottom:1px solid #DFDFDF;color:gray}.sidebar__link:first-child{border-top:1px solid #DFDFDF}.sidebar__subGroup{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.splash{width:100%;background:linear-gradient(45deg, #e6608d, #ef6d86, #f67c82, #fa8b7f);padding:25px 0 50px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.splash__content-wrapper{text-align:center;width:100%}.splash__content{display:inline-block}.splash__title{padding-bottom:20px;margin-left:-6px}.splash__subTitle{padding-bottom:40px}.splash__image-wrapper{display:none}@media (min-width: 600px){.splash{padding:0 30px 0 0}.splash__image-wrapper,.splash__content-wrapper{-webkit-box-flex:1;-ms-flex:1 1 50%;flex:1 1 50%}.splash__content{text-align:left;width:auto}.splash__content-wrapper{padding-top:10vw;padding-right:40px;text-align:right}.splash__image-wrapper{display:block;padding-top:35px;padding-left:50px;padding-right:35px;padding-bottom:30px}.splash__image{max-width:240px;-webkit-transform:rotate(-11deg);transform:rotate(-11deg)}}@media (min-width: 800px){.splash{padding-right:55px}.splash__content-wrapper{padding-top:95px}.splash__image-wrapper .splash__image{max-width:323px}}.button{border-radius:4px;-webkit-box-shadow:0 16px 24px 0 rgba(12,0,51,0.1);box-shadow:0 16px 24px 0 rgba(12,0,51,0.1);font-family:"Mosk",sans-serif;font-weight:800;font-size:14px;padding:15px 30px;text-decoration:none}.button--accent{background:linear-gradient(45deg, #e6608d, #ef6d86, #f67c82, #fa8b7f);color:#fff}.button--white{background-color:#fff;color:#4A4A4A}.hide-todo{display:none}
+          html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}embed,iframe,img,video{max-width:100%}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_thin_100-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_thin_100-webfont.woff") format("woff");font-weight:100;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_extra-light_200-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_extra-light_200-webfont.woff") format("woff");font-weight:200;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_light_300-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_light_300-webfont.woff") format("woff");font-weight:300;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_normal_400-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_normal_400-webfont.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_medium_500-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_medium_500-webfont.woff") format("woff");font-weight:500;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_semi-bold_600-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_semi-bold_600-webfont.woff") format("woff");font-weight:600;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_bold_700-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_bold_700-webfont.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_extra-bold_800-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_extra-bold_800-webfont.woff") format("woff");font-weight:800;font-style:normal}@font-face{font-family:'Mosk';src:url("../webfonts/mosk/mosk_ultra-bold_900-webfont.woff2") format("woff2"),url("../webfonts/mosk/mosk_ultra-bold_900-webfont.woff") format("woff");font-weight:900;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-regular-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-regular-webfont.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-italic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-italic-webfont.woff") format("woff");font-weight:400;font-style:italic}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-semibold-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-semibold-webfont.woff") format("woff");font-weight:600;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-semibolditalic-webfont.woff") format("woff");font-weight:600;font-style:italic}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-bold-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-bold-webfont.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:'Crimson Text';src:url("../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff2") format("woff2"),url("../webfonts/crimson-text/crimsontext-bolditalic-webfont.woff") format("woff");font-weight:700;font-style:italic}body{background-color:#fff}.title,.subTitle{color:#fff;text-shadow:0 2px 4px rgba(12,0,51,0.1)}.title--regular{font-size:45px}.title--big{font-size:60px}.subTitle{font-size:14px;line-height:25px}@media (min-width: 800px){.title--regular{font-size:85px}.title--big{font-size:85px}.subTitle{font-size:18px}}h1,h2,h3,h4{font-family:"Mosk",sans-serif;font-weight:800}h2{color:#4A4A4A;font-size:14px}h3{color:#4A4A4A;font-size:12px}@media (min-width: 450px){h2{font-size:18px}h3{font-size:14px}}.heading{text-align:center}.underline{text-decoration:underline}p{font-family:"Crimson Text",serif;font-size:12px;line-height:18px;padding-bottom:7px}@media (min-width: 450px){p{font-size:14px;line-height:20px;padding-bottom:7px}}.logo{font-family:"Mosk",sans-serif;font-weight:800;color:#4A4A4A;font-size:24px}.link{font-family:"Mosk",sans-serif;font-weight:800;font-size:16px;text-transform:uppercase;text-decoration:none;color:#4A4A4A}.menu,.search{padding:17px 19px;cursor:pointer}.header--white-bg{background-color:#fff;-webkit-box-shadow:none;box-shadow:none}.header--clear-bg{background-color:none;-webkit-box-shadow:none;box-shadow:none}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:60px;max-width:1130px;margin:0 auto}.header__logo{padding:21px 19px}.header__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.header__link{display:none;padding:21px 19px}@media (min-width: 600px){.header__link{display:inherit}.header__menu{display:none}}#menu-sidebar{width:300px;background-color:#fff}.sidebar__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.sidebar__logo{padding:20px 40px;-webkit-box-flex:1;-ms-flex:1 1 80%;flex:1 1 80%}.sidebar__menu{padding-top:20px}.sidebar__link{padding:20px 40px;border-bottom:1px solid #DFDFDF;color:gray}.sidebar__link:first-child{border-top:1px solid #DFDFDF}.sidebar__subGroup{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.splash{width:100%;background:linear-gradient(45deg, #e6608d, #ef6d86, #f67c82, #fa8b7f);padding:25px 0 50px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.splash__content-wrapper{text-align:center;width:100%}.splash__content{display:inline-block}.splash__title{padding-bottom:20px;margin-left:-6px}.splash__subTitle{padding-bottom:40px}.splash__image-wrapper{display:none}@media (min-width: 600px){.splash{padding:0 30px 0 0}.splash__image-wrapper,.splash__content-wrapper{-webkit-box-flex:1;-ms-flex:1 1 50%;flex:1 1 50%}.splash__content{text-align:left;width:auto}.splash__content-wrapper{padding-top:10vw;padding-right:40px;text-align:right}.splash__image-wrapper{display:block;padding-top:35px;padding-left:50px;padding-right:35px;padding-bottom:30px}.splash__image{max-width:240px;-webkit-transform:rotate(-11deg);transform:rotate(-11deg)}}@media (min-width: 800px){.splash{padding-right:55px}.splash__content-wrapper{padding-top:95px}.splash__image-wrapper .splash__image{max-width:323px}}.button{border-radius:4px;-webkit-box-shadow:0 16px 24px 0 rgba(12,0,51,0.1);box-shadow:0 16px 24px 0 rgba(12,0,51,0.1);font-family:"Mosk",sans-serif;font-weight:800;font-size:14px;padding:15px 30px;text-decoration:none}.button--accent{background:linear-gradient(45deg, #e6608d, #ef6d86, #f67c82, #fa8b7f);color:#fff}.button--white{background-color:#fff;color:#4A4A4A}.categories{width:100%;background-color:#fff}.categories__wrapper{max-width:680px;margin:0 auto;padding:50px 20px}.theme__heading-container{padding-bottom:12px}.theme__overflow-container{height:100%}.theme__overflow{padding-left:60px;padding-bottom:0px;position:absolute;bottom:0;right:0;background:-webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), color-stop(#fff), to(#fff));background:linear-gradient(90deg, transparent, #fff, #fff, #fff)}.overflow-arrow{background-color:green;z-index:50}.types{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-top:20px}.type{-webkit-box-flex:1;-ms-flex:1 1 40%;flex:1 1 40%;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:270px;padding-bottom:30px}.type__icon{margin:10px auto 0 auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.type__description{display:none}@media (min-width: 600px){.type{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex:1 1 40%;flex:1 1 40%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.type__icon{-webkit-box-flex:0;-ms-flex:0 0 none;flex:0 0 none;margin:6px 0 0 0;-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.type__content{padding-left:20px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;max-width:200px;text-align:left}.type__heading{padding-bottom:3px;margin-bottom:6px;border-bottom:1px solid #DFDFDF}.type__description{display:inherit}}.hide-todo{display:none}
           /*# sourceMappingURL=main.css.map */
         </style>
         
@@ -27,7 +29,7 @@
         <a href="archives.html" class="header__link link">Archives</a>
         <a href="search.html" class="header__search search">
           <amp-img class="hide-todo"
-            src="/icons/ui-24px-glyph-1_zoom.svg"
+            src="/icons/header/ui-24px-glyph-1_zoom.svg"
             width="24"
             height="24"
             layout="fixed"
@@ -39,7 +41,7 @@
         </a>
         <a on="tap:menu-sidebar.open" class="header__menu menu" role="button" tabindex="0">
           <amp-img class=""
-            src="/icons/ui-24px-glyph-2_menu-bold.svg"
+            src="/icons/header/ui-24px-glyph-2_menu-bold.svg"
             width="24"
             height="24"
             layout="fixed"
@@ -73,12 +75,157 @@
       <!-- srcset="/img/amp.jpg 1080w, /img/amp-900.jpg 900w, /img/amp-800.jpg 800w" -->
     </div>
     
+    <div class="categories">
+      <div class="categories__wrapper">
+        <div class="theme">
+          <amp-list width="auto"
+            height="18"
+            layout="fixed-height"
+            src="https://script.google.com/a/sjcatholicschool.org/macros/s/AKfycbxA6l7DAG6U6K1RyLO6JaVqi-JIrDnG-c6Q8GE84xuOJJasLaXz/exec?command=Create-JSON&sheet=Year"
+            class="theme__heading-container">
+            <template type="amp-mustache" id="template-year">
+              <h2 class="theme__heading heading">{{year}} Theme</h2>
+            </template>
+          </amp-list>
+          <amp-list width="auto"
+            height="107"
+            layout="fixed-height"
+            src="https://script.google.com/a/sjcatholicschool.org/macros/s/AKfycbxA6l7DAG6U6K1RyLO6JaVqi-JIrDnG-c6Q8GE84xuOJJasLaXz/exec?command=Create-JSON&sheet=Theme"
+            class="">
+            <template type="amp-mustache" id="template-year">
+              <p class="theme__paragraph">{{theme}}</p>
+            </template>
+            <div overflow
+              role="button"
+              aria-label="Show more"
+              class="theme__overflow-container">
+              <p class="theme__overflow">
+                <span>
+                  <amp-img class="theme__overflow-arrow"
+                    src="/icons/other/arrows-24px-glyph-1_bold-right.svg"
+                    width="8"
+                    height="8"
+                    layout="fixed"
+                    alt="Read More Arrow">
+                  </amp-img>
+                </span>
+                <span class="underline">Read more</span>
+              <p>
+            </div>
+          </amp-list>
+        <div class="types">
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/ui-48px-glyph-1_leaf-81.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Poetry</h3>
+              <p class="type__description">Any kind of poem from iambic pentameter to freeverse.</p>
+            </div>
+          </div>
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/business-48px-glyph_sign.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Short Story</h3>
+              <p class="type__description">Short stories of any genre and and style.</p>
+            </div>
+          </div>
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/files-48px-glyph_single-copy-04.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Essay</h3>
+              <p class="type__description">Well-written speeches, articles, and essays.</p>
+            </div>
+          </div>
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/design-48px-glyph_palette.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Artwork</h3>
+              <p class="type__description">Any visual art piece from photography to painting.</p>
+            </div>
+          </div>
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/media-48px-glyph-1_action-73.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Screenplay</h3>
+              <p class="type__description">Original screenplays and scripts, from comedies to tragedies.</p>
+            </div>
+          </div>
+          <div class="type">
+            <amp-img class="type__icon"
+              src="/icons/categories/design-48px-glyph_shapes.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="">
+            </amp-img>
+            <div class="type__content">
+              <h3 class="type__heading">Other</h3>
+              <p class="type__description">Odd one out? Send your unique work as well.</p>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    
+    <!-- <template type="amp-mustache" id="amp-template-id">
+        <p>{{theme}}</p>
+    </template>
+    <div class="categories">
+      <amp-list src="https://script.google.com/a/sjcatholicschool.org/macros/s/AKfycbxA6l7DAG6U6K1RyLO6JaVqi-JIrDnG-c6Q8GE84xuOJJasLaXz/exec?command=Create-JSON&sheet=Theme"
+        width="500"
+        height="1000"
+        layout="fixed"
+        template="amp-template-id"
+    
+        <div overflow role=button aria-label="Show more" class="list-overflow">
+            Show more
+        </div>
+    </amp-list>
+    <p>test</p>
+    .list-overflow[overflow] {
+      position: absolute;
+      bottom: 0;
+    }
+    
+    </div> -->
+    
     <amp-sidebar id="menu-sidebar" layout="nodisplay" side="right">
       <div class="sidebar__subGroup">
         <p class="sidebar__logo logo">Inscape</p>
         <a on="tap:menu-sidebar.close" class="sidebar__menu menu" role="button" tabindex="0">
           <amp-img class=""
-            src="/icons/ui-24px-glyph-1_bold-remove.svg"
+            src="/icons/header/ui-24px-glyph-1_bold-remove.svg"
             width="20"
             height="20"
             layout="fixed"

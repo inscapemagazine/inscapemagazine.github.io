@@ -46,8 +46,13 @@ h3 {
     font-size: 14px;
   }
 }
-
+.heading {
+  text-align: center;
+}
 // Paragraph Text
+.underline {
+  text-decoration: underline;
+}
 p {
   font-family: $serif;
   font-size: 12px;
