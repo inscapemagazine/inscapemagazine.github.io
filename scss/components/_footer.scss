@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+}
+.footer__copyright {
+  padding: 16px;
+  text-align: center;
+}
+.footer--dark-bg {
+  background-color: $grey-footer;
+  .footer__copyright {
+    color: $grey-bg-light;
+  }
+}
