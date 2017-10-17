@@ -1,3 +1,30 @@
+// Title
+.title,
+.subTitle {
+  color: $accent-t;
+  text-shadow: $text-shadow;
+}
+.title--regular {
+  font-size: 45px;
+}
+.title--big {
+  font-size: 60px;
+}
+.subTitle {
+  font-size: 14px;
+  line-height: 25px;
+}
+@media (min-width: $bp-splash) {
+  .title--regular {
+    font-size: 85px;
+  }
+  .title--big {
+    font-size: 85px;
+  }
+  .subTitle {
+    font-size: 18px;
+  }
+}
 // Headings
 h1, h2, h3, h4 {
   font-family: $sans-serif;

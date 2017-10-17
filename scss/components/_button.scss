@@ -1,0 +1,17 @@
+.button {
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(12,0,51,0.1);
+  font-family: $sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.button--accent {
+  background: $accent-g;
+  color: $accent-t;
+}
+.button--white {
+  background-color: $white;
+  color: $grey-text;
+}

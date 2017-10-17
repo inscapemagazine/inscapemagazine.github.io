@@ -1,6 +1,6 @@
 // Variables
-@import 'variables/variables'
-, 'variables/colors';
+@import 'variables/colors'
+, 'variables/variables';
 // Resets
 @import 'resets/reset'
 , 'resets/reset-custom';
@@ -12,6 +12,7 @@
 , 'typography';
 // Components
 @import 'components/header'
-, 'components/splash';
+, 'components/splash'
+, 'components/button';
 // Testing
 @import 'test';

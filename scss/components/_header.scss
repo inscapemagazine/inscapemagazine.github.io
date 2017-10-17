@@ -19,6 +19,15 @@
   cursor: pointer;
 }
 // Header
+.header--white-bg {
+  background-color: $white;
+  box-shadow: none;
+}
+// TODO
+.header--clear-bg {
+  background-color: none;
+  box-shadow: none;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -26,10 +35,6 @@
   height: 60px;
   max-width: $w-header;
   margin: 0 auto;
-}
-.header--white-bg {
-  background-color: $white;
-  box-shadow: none;
 }
 .header__logo {
   padding: 21px 19px;

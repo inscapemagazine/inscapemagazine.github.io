@@ -1,10 +1,16 @@
+// Accent
+$accent-g: $g-red;
+$accent-t: $white;
+
 // Font Stacks
 $sans-serif: 'Mosk', sans-serif;
 $serif: 'Crimson Text', serif;
 
+$text-shadow: 0 2px 4px rgba(12,0,51,0.1);
+
 // Breakpoints
 $bp-small: 450px;
 $bp-header: 600px;
-
+$bp-splash: 800px;
 // Width
 $w-header: 1130px;
