@@ -18,7 +18,7 @@
 }
 .splash__title {
   padding-bottom: 20px;
-  margin-left: -6px;
+  margin-left: -4px;
 }
 .splash__subTitle {
   padding-bottom: 40px;
@@ -54,7 +54,6 @@
     max-width: 240px;
     transform: rotate(-11deg);
   }
-
 }
 @media (min-width: $bp-splash) {
   .splash {
@@ -66,6 +65,9 @@
   .splash__image-wrapper .splash__image {
     // single class selector is getting overwritten
     max-width: 323px;
+  }
+  .splash__title {
+    margin-left: -6px;
   }
 }
 

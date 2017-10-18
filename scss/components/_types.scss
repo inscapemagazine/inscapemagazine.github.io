@@ -26,6 +26,7 @@
     display: flex;
     flex: 1 1 40%;
     flex-direction: row;
+    justify-content: space-between;
   }
   .type__icon {
     flex: 0 0 none;
@@ -33,7 +34,6 @@
     order: 0;
   }
   .type__content {
-    padding-left: 20px;
     flex: 1 1 auto;
     max-width: 200px;
     text-align: left;
