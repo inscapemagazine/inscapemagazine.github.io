@@ -75,6 +75,14 @@
   padding: 20px 40px;
   border-bottom: 1px solid $grey-outline;
   color: $grey-icon; //lighten($grey-text, 20%);
+  &:link,
+  &:visited {
+    color: $grey-icon;
+  }
+  &:hover,
+  &:active {
+    color: $grey-text;
+  }
   &:first-child {
     border-top: 1px solid $grey-outline;
   }
