@@ -33,6 +33,7 @@
   display: none;
 }
 .award__content {
+  padding-right: 16px;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -45,9 +46,34 @@
 .award__description {
   padding-bottom: 0;
 }
+.awards__overflow-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.awards__overflow-container {
+  height: 100%;
+}
+.awards__overflow {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // border-top: 1px solid $grey-outline;
+  // background-color: $white;
+  background: linear-gradient(180deg, transparent, $white, $white, $white)
+}
+
 @media (min-width: $bp-header-600) {
   .award {
     padding: 16px 24px;
+  }
+  .award__content {
+    padding-right: 24px;
   }
   .award__heading {
     line-height: 20px;

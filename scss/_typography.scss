@@ -41,6 +41,8 @@ h3 {
 a,
 a:link {
   color: $grey-text;
+}
+a {
   &:visited,
   &:hover,
   &:active {
@@ -50,7 +52,7 @@ a:link {
 .underline {
   text-decoration: underline;
 }
-@media (min-width: $bp-small-450) {
+@media (min-width: $bp-header-600) {
   h2 {
     font-size: 18px;
   }
@@ -69,7 +71,7 @@ p {
   line-height: 18px;
   padding-bottom: 7px;
 }
-@media (min-width: $bp-small-450) {
+@media (min-width: $bp-header-600) {
   p {
     font-size: 14px;
     line-height: 20px;
