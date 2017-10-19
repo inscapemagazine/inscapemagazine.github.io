@@ -1,0 +1,44 @@
+<div class="awards">
+  <div class="awards__content">
+    <h2 class="heading">Awards and Recognition</h2>
+    <p>Each year, Inscape performs a blind selection process to choose the top work from our three largest categories: poetry, short stories, and artwork. <a href="" class="underline">Learn more</a> about our selection process.</p>
+  </div>
+  <div class="awards__wrapper">
+    <amp-list src="https://script.google.com/a/sjcatholicschool.org/macros/s/AKfycbxA6l7DAG6U6K1RyLO6JaVqi-JIrDnG-c6Q8GE84xuOJJasLaXz/exec?command=Create-JSON&sheet=Awards"
+      width="auto"
+      height="175"
+      layout="fixed-height"
+      class="awards__list"><!-- height for desktop 245 -->
+      <template type="amp-mustache" id="template-awards">
+        <div class="award">
+          <amp-img class="award__icon"
+            src="{{iconUrl}}"
+            width="48"
+            height="48"
+            layout="fixed"
+            alt="">
+          </amp-img>
+          <div class="award__content">
+            <h3 class="award__heading">{{title}}</h3>
+            <p class="award__description">{{author}}, {{grade}}</p>
+          </div>
+          <div class="award__link">
+            <a href="{{link}}" target="_blank" class="award__button button button--outline">View</a>
+            <a href="{{link}}" target="_blank" class="award__arrow">
+              <amp-img class=""
+                src="/icons/other/arrows-24px-glyph-1_minimal-right.svg"
+                width="24"
+                height="24"
+                layout="fixed"
+                alt="View">
+              </amp-img>
+            </a>
+          </div>
+        </div>
+      </template>
+      <div overflow role=button aria-label="Show more" class="award-overflow">
+        Show more
+      </div>
+    </amp-list>
+  </div>
+</div>

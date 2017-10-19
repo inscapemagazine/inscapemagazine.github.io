@@ -47,7 +47,7 @@
   display: none;
   padding: 21px 19px;
 }
-@media (min-width: $bp-header) {
+@media (min-width: $bp-header-600) {
   .header__link {
     display: inherit;
   }

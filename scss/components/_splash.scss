@@ -26,7 +26,7 @@
 .splash__image-wrapper {
   display: none;
 }
-@media (min-width: $bp-header) {
+@media (min-width: $bp-header-600) {
   .splash {
     padding: 0 30px 0 0;
   }
@@ -55,7 +55,7 @@
     transform: rotate(-11deg);
   }
 }
-@media (min-width: $bp-splash) {
+@media (min-width: $bp-splash-800) {
   .splash {
     padding-right: 55px;
   }

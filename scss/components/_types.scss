@@ -21,7 +21,7 @@
 .type__description {
   display: none;
 }
-@media (min-width: $bp-header) {
+@media (min-width: $bp-header-600) {
   .type {
     display: flex;
     flex: 1 1 40%;

@@ -3,12 +3,9 @@
   background-color: $white;
 }
 .categories__wrapper {
-  max-width: 680px;
+  max-width: $w-wrapper;
   margin: 0 auto;
   padding: 50px 20px;
-}
-.theme__heading-container {
-  padding-bottom: 12px;
 }
 .theme__overflow-container {
   height: 100%;

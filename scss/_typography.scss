@@ -2,7 +2,7 @@
 .title,
 .subTitle {
   color: $accent-t;
-  text-shadow: $text-shadow;
+  shadow-text: $shadow-text;
 }
 .title--regular {
   font-size: 45px;
@@ -14,7 +14,7 @@
   font-size: 14px;
   line-height: 25px;
 }
-@media (min-width: $bp-splash) {
+@media (min-width: $bp-splash-800) {
   .title--regular {
     font-size: 85px;
   }
@@ -38,7 +38,19 @@ h3 {
   color: $grey-text;
   font-size: 12px;
 }
-@media (min-width: $bp-small) {
+a,
+a:link {
+  color: $grey-text;
+  &:visited,
+  &:hover,
+  &:active {
+    color: $black;
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+@media (min-width: $bp-small-450) {
   h2 {
     font-size: 18px;
   }
@@ -48,18 +60,16 @@ h3 {
 }
 .heading {
   text-align: center;
+  padding-bottom: 12px;
 }
 // Paragraph Text
-.underline {
-  text-decoration: underline;
-}
 p {
   font-family: $serif;
   font-size: 12px;
   line-height: 18px;
   padding-bottom: 7px;
 }
-@media (min-width: $bp-small) {
+@media (min-width: $bp-small-450) {
   p {
     font-size: 14px;
     line-height: 20px;
