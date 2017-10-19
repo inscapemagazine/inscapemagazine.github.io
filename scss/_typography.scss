@@ -52,6 +52,14 @@ a {
 .underline {
   text-decoration: underline;
 }
+em,
+i {
+  font-style: italic;
+}
+strong,
+b {
+  font-weight: 800;
+}
 @media (min-width: $bp-header-600) {
   h2 {
     font-size: 18px;

@@ -1,0 +1,36 @@
+.about-blurb {
+  width: 100%;
+  background-color: $white;
+  padding: 50px 20px;
+}
+.about-blurb__wrapper {
+  max-width: $w-wrapper;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.about__spread-wrapper {
+  display: none;
+}
+ @media (min-width: $bp-header-600) {
+   .about-blurb__wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+   }
+   .about__spread-wrapper,
+   .about__content {
+     flex: 1 1 50%;
+   }
+  .about__spread-wrapper {
+    display: block;
+  }
+  .about__content {
+    padding-left: 20px;
+  }
+  .about__text {
+    padding-bottom: 30px;
+  }
+  .about__heading {
+    padding-bottom: 15px;
+  }
+ }

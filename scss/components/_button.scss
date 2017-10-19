@@ -10,14 +10,33 @@
 .button--accent {
   background: $accent-g;
   color: $accent-t;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $accent-t;
+  }
 }
 .button--white {
   background-color: $white;
   color: $grey-text;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $grey-text;
+  }
 }
 .button--outline {
   border: 1px solid $grey-text;
   color: $grey-text;
   padding: 6px 25px;
   box-shadow: none;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $grey-text;
+  }
+
 }
